@@ -3,7 +3,7 @@ import { Position, type NodeTypes } from '@xyflow/react';
 import { PositionLoggerNode } from './PositionLoggerNode';
 import { NodeWithToolbar } from './NodeWithToolbar';
 import { SinkNode } from './SinkNode';
-import { AppNode } from './types';
+import { AppNode, DatabaseProvider } from './types';
 
 export const initialNodes: AppNode[] = [
   { id: 'a', type: 'position-logger', position: { x: 0, y: 0 }, data: { label: 'wire' } },
@@ -23,7 +23,7 @@ export const initialNodes: AppNode[] = [
     id: 'd',
     type: 'sink-node',
     position: { x: 100, y: -100 },
-    data: { label: 'sink node' , toolbarVisible: true, toolbarPosition: Position.Bottom },
+    data: { label: 'sink node' , toolbarVisible: true, toolbarPosition: Position.Bottom, databaseProvider: DatabaseProvider.Fileshare},
   },
   { id: 'e', type: 'position-logger', position: { x: 100, y: 100 }, data: { label: 'your ideas' } },
   {

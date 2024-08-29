@@ -19,6 +19,6 @@ export function NodeWithToolbar({ data }: NodeProps<NodeWithToolbar>): any {
       <Handle type="source" position={Position.Right} style = {{background: 'white'}}/>
     </>
   );
-};
+}
  
 export default memo(NodeWithToolbar);
