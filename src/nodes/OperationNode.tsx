@@ -5,6 +5,7 @@ import TargetHandle from './TargetHandle';
 import { FaDoorOpen } from 'react-icons/fa';
 import SourceHandle from './SourceHandle';
 import { LuAppWindow } from 'react-icons/lu';
+import { MdOutlinePivotTableChart } from 'react-icons/md';
 
 export function OperationIcon(type: OperationType): JSX.Element {
   // Render different icon based on the type of sink node
@@ -13,6 +14,8 @@ export function OperationIcon(type: OperationType): JSX.Element {
       return <FaDoorOpen color="white" />;
     case OperationType.Append:
       return <LuAppWindow color="white" />;
+    case OperationType.Pivot:
+      return <MdOutlinePivotTableChart color="white" />;
   }
 }
 

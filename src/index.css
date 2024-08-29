@@ -7,6 +7,6 @@
 html,
 body,
 #root {
-  height: 500px;
+  height: 100%;
   margin: 0;
 }
