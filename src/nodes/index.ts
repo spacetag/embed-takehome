@@ -4,14 +4,21 @@ import { PositionLoggerNode } from './PositionLoggerNode';
 import { NodeWithToolbar } from './NodeWithToolbar';
 import { SinkNode } from './SinkNode';
 import { DatasetNode } from './DatasetNode';
+import { SourceDatasetNode } from './SourceDatasetNode';
 import { AppNode, DatabaseProvider } from './types';
 
 export const initialNodes: AppNode[] = [
   {
+    id: 'a-1',
+    type: 'source-dataset-node',
+    position: { x: 0, y: -300 },
+    data: { label: 'Survey_2015', sublabel: '10 rules applied' , toolbarVisible: true, toolbarPosition: Position.Bottom, databaseProvider: DatabaseProvider.Fileshare},
+  },
+  {
     id: 'a0',
     type: 'dataset-node',
     position: { x: 100, y: -300 },
-    data: { label: 'Joineddataset', sublabel: '10 rules applied', toolbarVisible: true, toolbarPosition: Position.Bottom, databaseProvider: DatabaseProvider.Fileshare},
+    data: { label: 'Joineddataset', sublabel: '10 rules applied' , toolbarVisible: true, toolbarPosition: Position.Bottom, databaseProvider: DatabaseProvider.Fileshare},
   },
   { id: 'a', type: 'position-logger', position: { x: 0, y: 0 }, data: { label: 'wire' } },
   {
@@ -46,5 +53,6 @@ export const nodeTypes = {
   'node-with-toolbar': NodeWithToolbar,
   'sink-node': SinkNode,
   'dataset-node': DatasetNode,
+  'source-dataset-node': SourceDatasetNode,
   // Add any of your custom nodes here!
 } satisfies NodeTypes;
