@@ -17,9 +17,9 @@ export function DatasetNode({ data }: NodeProps<DatasetNode>): JSX.Element {
       <div style={{color: 'grey', fontSize: '12px', marginTop: '1px', position: 'absolute', top: '60px', left: '-24px', minWidth: '100px'}}>
         {data.sublabel}
       </div>
-      <TargetHandle />
       <SourceHandle />
-    </div>
+      <TargetHandle />
+      </div>
   );
 }
  
