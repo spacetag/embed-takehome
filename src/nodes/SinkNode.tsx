@@ -15,8 +15,8 @@ export function SinkNode({ data }: NodeProps<SinkNode>): any {
         {data.label}
       </div>
  
-      {/* <Handle type="target" position={Position.Top} /> */}
-      <Handle type="source" position={Position.Right} style = {{background: 'white'}}/>
+      <Handle type="target" position={Position.Left} style = {{borderColor: '#0000', background: '#0000'}}/>
+      <Handle type="source" position={Position.Right} style = {{background: 'white', border: 'solid #53B177'}}/>
     </>
   );
 };
