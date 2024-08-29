@@ -17,7 +17,7 @@ export function DatabaseIcon(type: DatabaseProvider): JSX.Element {
 
 export function DatabaseIndicator({ databaseProvider }: { databaseProvider: DatabaseProvider }): JSX.Element {
   return (
-    <div style={{ padding: '10px 10px', lineHeight: '0.7px', borderRadius: '24px', border: '1px solid #e7e7e7', boxShadow: 'rgba(0, 0, 0, 0.3) 0px 2px 4px' }}>
+    <div style={{ padding: '6px 6px', lineHeight: 0.7, borderRadius: '24px', border: '1px solid #e7e7e7', boxShadow: 'rgba(0, 0, 0, 0.3) 0px 2px 4px' }}>
       {DatabaseIcon(databaseProvider)}
     </div>
   );
