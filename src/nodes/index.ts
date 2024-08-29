@@ -69,7 +69,7 @@ export const initialNodes: AppNode[] = [
   {
     id: '100',
     type: 'sink-node',
-    position: { x: 600, y: 300 },
+    position: { x: 600, y: 302 },
     data: { label: 'Appenddata..', databaseProvider: DatabaseProvider.Fileshare},
   },
   {
@@ -81,7 +81,7 @@ export const initialNodes: AppNode[] = [
   {
     id: '120',
     type: 'sink-node',
-    position: { x: 1000, y: 0},
+    position: { x: 1000, y: 2},
     data: { label: 'Appenddata..', databaseProvider: DatabaseProvider.Fileshare},
   },
 ];

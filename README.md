@@ -1,10 +1,10 @@
-![](https://github.com/xyflow/web/blob/main/assets/codesandbox-header-ts.png?raw=true)
+![](Header.png)
 
 # Embed Takehome - 
 
 To setup:
 ```bash
-npm install # or `pnpm install` or `yarn install`
+npm install
 ```
 
 To run:
