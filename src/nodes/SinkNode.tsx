@@ -1,24 +1,20 @@
 import { memo } from 'react';
-import { Handle, Position, NodeToolbar, type NodeProps } from '@xyflow/react';
+import { Handle, Position, type NodeProps } from '@xyflow/react';
 import { type SinkNode } from './types';
+import { BsHddNetwork } from 'react-icons/bs';
  
-export function SinkNode({ data }: NodeProps<SinkNode>): any {
+export function SinkNode({ data }: NodeProps<SinkNode>): JSX.Element {
   return (
     <>
-      <NodeToolbar isVisible={data.toolbarVisible} position={data.toolbarPosition}>
-        <button>delete</button>
-        <button>copy</button>
-        <button>expand</button>
-      </NodeToolbar>
- 
-      <div style={{ padding: '10px 20px', border: '2px solid grey', boxShadow: '2px 10px 8px rgba(0, 0, 0, .3)' }}>
-        {data.label}
+      <div style={{ padding: '10px 10px', lineHeight: '0.7px', borderRadius: '24px', border: '1px solid #e7e7e7', boxShadow: 'rgba(0, 0, 0, 0.3) 0px 2px 4px' }}>
+        <BsHddNetwork color="grey" />
       </div>
  
       <Handle type="target" position={Position.Left} style = {{borderColor: '#0000', background: '#0000'}}/>
-      <Handle type="source" position={Position.Right} style = {{background: 'white', border: 'solid #53B177'}}/>
+      {/* <Handle type="source" position={Position.Right} style = {{background: 'white', border: 'solid #53B177'}}/> */}
     </>
   );
-};
+}
  
-export default memo(SinkNode);
+const MemoizedSinkNode = memo(SinkNode);
+export default MemoizedSinkNode;
