@@ -29,3 +29,4 @@ Learn:
 
 - [React Flow – Custom Nodes](https://reactflow.dev/learn/customization/custom-nodes)
 - [React Flow – Layouting](https://reactflow.dev/learn/layouting/layouting)
+- (Forked with significant modification from: https://github.com/xyflow/vite-react-flow-template)
