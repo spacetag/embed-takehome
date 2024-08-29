@@ -32,7 +32,7 @@ export default function App() {
       edgeTypes={edgeTypes}
       onEdgesChange={onEdgesChange}
       onConnect={onConnect}
-      colorMode='dark'
+      // colorMode='dark'
       fitView
     >
       <Background />
