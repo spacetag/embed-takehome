@@ -11,7 +11,7 @@ export const initialNodes: AppNode[] = [
     id: 'a0',
     type: 'dataset-node',
     position: { x: 100, y: -300 },
-    data: { label: 'sink node' , toolbarVisible: true, toolbarPosition: Position.Bottom, databaseProvider: DatabaseProvider.Fileshare},
+    data: { label: 'Joineddataset', sublabel: '10 rules applied', toolbarVisible: true, toolbarPosition: Position.Bottom, databaseProvider: DatabaseProvider.Fileshare},
   },
   { id: 'a', type: 'position-logger', position: { x: 0, y: 0 }, data: { label: 'wire' } },
   {
