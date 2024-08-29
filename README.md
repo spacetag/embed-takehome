@@ -23,7 +23,7 @@ npm run dev
 Links:
 
 - [React Flow - Docs](https://reactflow.dev)
-- [React Flow - Discord](https://discord.com/invite/Bqt6xrs)
+- [React Icons](https://react-icons.github.io/)
 
 Learn:
 
