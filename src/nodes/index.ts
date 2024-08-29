@@ -84,44 +84,6 @@ export const initialNodes: AppNode[] = [
     position: { x: 1000, y: 0},
     data: { label: 'Appenddata..', databaseProvider: DatabaseProvider.Fileshare},
   },
-  // {
-  //   id: 'a0',
-  //   type: 'dataset-node',
-  //   position: { x: 100, y: -300 },
-  //   data: { label: 'Joineddataset', sublabel: '10 rules applied', databaseProvider: DatabaseProvider.Fileshare},
-  // },
-  // { id: 'a', type: 'position-logger', position: { x: 0, y: 0 }, data: { label: 'wire' } },
-  // {
-  //   id: 'b0',
-  //   type: 'operation-node',
-  //   position: { x: -200, y: -100 },
-  //   data: { label: 'Join', operationType: OperationType.Join},
-  // },
-  // {
-  //   id: 'b',
-  //   type: 'position-logger',
-  //   position: { x: -100, y: 100 },
-  //   data: { label: 'drag me b!' },
-  // },
-  // {
-  //   id: 'c',
-  //   type: 'node-with-toolbar',
-  //   position: { x: -100, y: -100 },
-  //   data: { label: 'drag me c!' },
-  // },
-  // {
-  //   id: 'd',
-  //   type: 'sink-node',
-  //   position: { x: 100, y: -100 },
-  //   data: { label: 'sink node', databaseProvider: DatabaseProvider.Fileshare},
-  // },
-  // { id: 'e', type: 'position-logger', position: { x: 100, y: 100 }, data: { label: 'your ideas' } },
-  // {
-  //   id: 'f',
-  //   type: 'position-logger',
-  //   position: { x: 0, y: 200 },
-  //   data: { label: 'with React Flow' },
-  // },
 ];
 
 export const nodeTypes = {
