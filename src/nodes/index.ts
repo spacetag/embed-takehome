@@ -1,7 +1,6 @@
 import { Position, type NodeTypes } from '@xyflow/react';
 
 import { PositionLoggerNode } from './PositionLoggerNode';
-import { NodeWithToolbar } from './NodeWithToolbar';
 import { SinkNode } from './SinkNode';
 import { DatasetNode } from './DatasetNode';
 import { SourceDatasetNode } from './SourceDatasetNode';
@@ -88,7 +87,6 @@ export const initialNodes: AppNode[] = [
 
 export const nodeTypes = {
   'position-logger': PositionLoggerNode,
-  'node-with-toolbar': NodeWithToolbar,
   'sink-node': SinkNode,
   'operation-node': OperationNode,
   'dataset-node': DatasetNode,
