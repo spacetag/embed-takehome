@@ -1,12 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 
-import PipelineGraph from './PipelineGraph';
+import App from './App';
 
 import './index.css';
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <PipelineGraph />
+    <App />
   </React.StrictMode>
 );
