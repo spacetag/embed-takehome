@@ -8,7 +8,7 @@ import TargetHandle from './TargetHandle';
 export function DatasetNode({ data }: NodeProps<DatasetNode>): JSX.Element {
   return (
     <div style={{ height: '34px', width: '34px'}}>
-      <div style={{ padding: '8px 8px', lineHeight: 0.7, borderRadius: '24px', background: '#898EBD', width: '16px' }}>
+      <div style={{ padding: '8px 8px', lineHeight: 0.7, borderRadius: '50%', background: '#898EBD', width: '16px' }}>
         <PiStackFill style={{ color: 'white' }} />
       </div>
       <div style={{color: '#323333', fontSize: '12px', border: '1px solid lightgrey', borderRadius: "4px", padding: '0px 8px', marginTop: '6px', position: 'absolute', top: '33px', left: '-29px'}}>
