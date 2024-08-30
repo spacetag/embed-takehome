@@ -1,6 +1,6 @@
 import { memo } from 'react';
 import { type NodeProps } from '@xyflow/react';
-import { type SourceDatasetNode} from './types';
+import { DatabaseIndicatorState, type SourceDatasetNode} from './types';
 import { PiStackFill } from 'react-icons/pi';
 import SourceHandle from './SourceHandle';
 import TargetHandle from './TargetHandle';
@@ -10,7 +10,7 @@ export function SourceDatasetNode({ data }: NodeProps<SourceDatasetNode>): JSX.E
   return (
     <div style={{ height: '34px', width: '34px'}}>
       <div style={{color: '#323333', fontSize: '12px', padding: '0px 8px', marginTop: '6px', position: 'absolute', top: '-3px', left: '-54px'}}>
-        <DatabaseIndicator databaseProvider={data.databaseProvider} />
+        <DatabaseIndicator databaseIndicatorState={DatabaseIndicatorState.Normal} databaseProvider={data.databaseProvider} />
       </div>
       <div style={{ padding: '8px 8px', lineHeight: 0.7, border: '1px solid #BBBBBB', borderRadius: '8px', background: 'white', width: '16px' }}>
         <PiStackFill style={{ color: '#30BBF7' }} />
