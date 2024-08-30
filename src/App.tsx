@@ -35,9 +35,8 @@ export default function App() {
       // colorMode='dark'
       fitView
     >
-      {/* <Background /> */}
-      {/* <MiniMap /> */}
-      {/* <Controls /> */}
+      <MiniMap />
+      <Controls />
     </ReactFlow>
   );
 }
