@@ -1,7 +1,18 @@
+import { IoHomeOutline } from "react-icons/io5";
 import PipelineGraph from "./PipelineGraph";
 
 export default function App() {
   return (
-    <PipelineGraph />
+    <div style={{width: '100%', height: '100%'}}>
+      <div>
+        <div style={{ color: 'white', fontSize: '24px', padding: '16px', background: '#3C3F4A' }}>
+          <div style={{ display: 'flex', alignItems: 'center' }}>
+            <IoHomeOutline style={{ color: 'white', marginRight: '10px' }} />
+            <div>Pipeline</div>
+          </div>
+        </div>
+      </div>
+      <PipelineGraph />
+    </div>
   );
 }
