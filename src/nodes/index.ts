@@ -4,7 +4,7 @@ import { SinkNode } from './SinkNode';
 import { DatasetNode } from './DatasetNode';
 import { SourceDatasetNode } from './SourceDatasetNode';
 import { OperationNode } from './OperationNode';
-import { AppNode, DatabaseProvider, OperationType } from './types';
+import { AppNode, DatabaseIndicatorState, DatabaseProvider, OperationType } from './types';
 
 export const initialNodes: AppNode[] = [
   {
@@ -62,13 +62,13 @@ export const initialNodes: AppNode[] = [
     id: '90',
     type: 'sink-node',
     position: { x: 600, y: 150 },
-    data: { label: 'Appenddata..', databaseProvider: DatabaseProvider.RDS},
+    data: { databaseIndicatorState: DatabaseIndicatorState.Error, databaseProvider: DatabaseProvider.RDS},
   },
   {
     id: '100',
     type: 'sink-node',
     position: { x: 600, y: 302 },
-    data: { label: 'Appenddata..', databaseProvider: DatabaseProvider.Fileshare},
+    data: { databaseIndicatorState: DatabaseIndicatorState.Dimmed, databaseProvider: DatabaseProvider.Fileshare},
   },
   {
     id: '110',
@@ -80,7 +80,7 @@ export const initialNodes: AppNode[] = [
     id: '120',
     type: 'sink-node',
     position: { x: 1000, y: 2},
-    data: { label: 'Appenddata..', databaseProvider: DatabaseProvider.Fileshare},
+    data: { databaseIndicatorState: DatabaseIndicatorState.Dimmed, databaseProvider: DatabaseProvider.Fileshare},
   },
 ];
 

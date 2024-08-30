@@ -7,7 +7,7 @@ import TargetHandle from './TargetHandle';
 export function SinkNode({ data }: NodeProps<SinkNode>): JSX.Element {
   return (
     <>
-      <DatabaseIndicator databaseProvider={data.databaseProvider} />
+      <DatabaseIndicator databaseProvider={data.databaseProvider} databaseIndicatorState={data.databaseIndicatorState}/>
       <TargetHandle />
     </>
   );

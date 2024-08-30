@@ -1,4 +1,4 @@
-import { DatabaseProvider} from './types';
+import { DatabaseIndicatorState, DatabaseProvider} from './types';
 import { BsHddNetwork } from 'react-icons/bs';
 import { FaGoogleDrive } from 'react-icons/fa';
 import { SiAmazonredshift } from 'react-icons/si';
@@ -15,9 +15,12 @@ export function DatabaseIcon(type: DatabaseProvider): JSX.Element {
   }
 }
 
-export function DatabaseIndicator({ databaseProvider }: { databaseProvider: DatabaseProvider }): JSX.Element {
+export function DatabaseIndicator({ databaseProvider, databaseIndicatorState }: { databaseProvider: DatabaseProvider, databaseIndicatorState: DatabaseIndicatorState }): JSX.Element {
+  const isDimmed = databaseIndicatorState === DatabaseIndicatorState.Dimmed;
+
   return (
-    <div style={{ padding: '6px 6px', lineHeight: 0.7, borderRadius: '24px', border: '1px solid #e7e7e7', boxShadow: 'rgba(0, 0, 0, 0.3) 0px 2px 4px' }}>
+
+    <div style={{ opacity: isDimmed ? 0.5 : 1, padding: '6px 6px', lineHeight: 0.7, borderRadius: '24px', border: '1px solid #e7e7e7', boxShadow: 'rgba(0, 0, 0, 0.3) 0px 2px 4px' }}>
       {DatabaseIcon(databaseProvider)}
     </div>
   );
