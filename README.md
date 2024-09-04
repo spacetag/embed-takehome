@@ -1,6 +1,6 @@
 ![](Header.png)
 
-# Embed Takehome - 
+# Embed Takehome
 
 To setup:
 ```bash
